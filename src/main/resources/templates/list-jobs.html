@@ -13,16 +13,8 @@
         <!-- TODO #1 - Use a loop to display job results in a table. -->
     <table class = "job-listing">
 
-<!--        <tr th:each="job : ${jobs}">-->
-<!--            <td th:text="${job}"></td>-->
-<!--            </tr>-->
-<!--        </tr>-->
-
         <tr th:each="job : ${jobs}">
             <td>
-<!--            <p>Name of Employer:</p>-->
-<!--                <p th:text="${job.employer}">-->
-<!--            </p>-->
                 <p>ID: [[${job.id}]]</p>
                 <p>Name: [[${job.name}]]</p>
                 <p>Employer: [[${job.employer}]]</p>
@@ -32,11 +24,6 @@
             </td>
         </tr>
 
-
-
-
-
-<!--        </tr>-->
 
     </table>
 
