@@ -20,8 +20,9 @@ public class Job {
     }
 
     // Initialize the id and value fields.
-    public Job(String aName, Employer anEmployer, Location aLocation, PositionType aPositionType, CoreCompetency aCoreCompetency) {
+    public Job(int aId, String aName, Employer anEmployer, Location aLocation, PositionType aPositionType, CoreCompetency aCoreCompetency) {
         this();
+        id = aId;
         name = aName;
         employer = anEmployer;
         location = aLocation;
@@ -78,6 +79,8 @@ public class Job {
     public int getId() {
         return id;
     }
+
+    public void setId(int id) {this.id = id;}
 
     public String getName() {
         return name;
