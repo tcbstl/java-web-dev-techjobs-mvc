@@ -24,7 +24,7 @@ public class JobData {
     private static ArrayList<Location> allLocations = new ArrayList<>();
     private static ArrayList<PositionType> allPositionTypes = new ArrayList<>();
     private static ArrayList<CoreCompetency> allCoreCompetency = new ArrayList<>();
-    private static int aId;
+//    private static int aId;
 
     /**
      * Fetch list of all job objects from loaded data,
@@ -191,7 +191,7 @@ public class JobData {
                     allPositionTypes.add(newPosition);
                 }
 
-                Job newJob = new Job(aId, aName, newEmployer, newLocation, newPosition, newSkill);
+                Job newJob = new Job(aName, newEmployer, newLocation, newPosition, newSkill);
 
                 allJobs.add(newJob);
             }
